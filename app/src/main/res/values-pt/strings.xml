@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viagens da Família Crespo</string>
+    <string name="strBtnMyTrips">As Minhas Viagens</string>
+    <string name="strBtnReports">Relatórios de Viagem</string>
+    <string name="strBtnAddExpenses">Adicionar Despesas</string>
+</resources>
