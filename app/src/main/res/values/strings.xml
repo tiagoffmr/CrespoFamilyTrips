@@ -3,4 +3,8 @@
     <string name="strBtnMyTrips">My Trips</string>
     <string name="strBtnReports">Reports</string>
     <string name="strBtnAddExpenses">Add Expenses</string>
+    <string name="strTvDestinyName">Name</string>
+    <string name="strEtForDestinyName">Bali</string>
+    <string name="strTvNumberOfDays">Days</string>
+    <string name="strBtnToGoNext">Next</string>
 </resources>

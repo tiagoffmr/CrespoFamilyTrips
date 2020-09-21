@@ -4,4 +4,8 @@
     <string name="strBtnMyTrips">As Minhas Viagens</string>
     <string name="strBtnReports">Relatórios de Viagem</string>
     <string name="strBtnAddExpenses">Adicionar Despesas</string>
+    <string name="strTvDestinyName">Nome</string>
+    <string name="strEtForDestinyName">Bali</string>
+    <string name="strTvNumberOfDays">Dias</string>
+    <string name="strBtnToGoNext">Seguinte</string>
 </resources>
