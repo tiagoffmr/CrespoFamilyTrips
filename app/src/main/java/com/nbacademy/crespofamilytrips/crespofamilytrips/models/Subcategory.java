@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips.logic;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.models;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips.logic;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.models;
 
 import java.math.BigDecimal;
 
@@ -8,9 +8,18 @@ public class Expenses {
     private String description;
     private BigDecimal value;
 
-    public Expenses(String description, BigDecimal value) {
+    public Expenses(int categoryId, String description, BigDecimal value) {
+        this.categoryId = categoryId;
         this.description = description;
         this.value = value;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getDescription() {
@@ -25,7 +34,7 @@ public class Expenses {
         return value;
     }
 
-    public void setValue(BigDecimal amount) {
-        this.value = amount;
+    public void setValue(BigDecimal value) {
+        this.value = value;
     }
 }

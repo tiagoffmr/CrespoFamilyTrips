@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips.logic;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.models;
 
 import java.util.List;
 
@@ -9,9 +9,19 @@ public class Destination {
     private int duration;
     private List<Category> categories;
 
-    public Destination(String name, int duration) {
+    public Destination(String destinationID, String name, int duration, List<Category> categories) {
+        this.destinationID = destinationID;
         this.name = name;
         this.duration = duration;
+        this.categories = categories;
+    }
+
+    public String getDestinationID() {
+        return destinationID;
+    }
+
+    public void setDestinationID(String destinationID) {
+        this.destinationID = destinationID;
     }
 
     public String getName() {

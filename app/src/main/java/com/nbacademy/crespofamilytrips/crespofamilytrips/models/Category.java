@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips.logic;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.models;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -11,9 +11,20 @@ public class Category {
     private List<Subcategory> subcategories;
     private List<Expenses> expenses;
 
-    public Category(String name, int value) {
+    public Category(String categoryID, String name, int value, List<Subcategory> subcategories, List<Expenses> expenses) {
+        this.categoryID = categoryID;
         this.name = name;
         this.value = value;
+        this.subcategories = subcategories;
+        this.expenses = expenses;
+    }
+
+    public String getCategoryID() {
+        return categoryID;
+    }
+
+    public void setCategoryID(String categoryID) {
+        this.categoryID = categoryID;
     }
 
     public String getName() {
@@ -38,6 +49,14 @@ public class Category {
 
     public void setSubcategories(List<Subcategory> subcategories) {
         this.subcategories = subcategories;
+    }
+
+    public List<Expenses> getExpenses() {
+        return expenses;
+    }
+
+    public void setExpenses(List<Expenses> expenses) {
+        this.expenses = expenses;
     }
 
     public int getTotal() {
