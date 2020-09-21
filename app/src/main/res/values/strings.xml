@@ -7,4 +7,9 @@
     <string name="strEtForDestinyName">Bali</string>
     <string name="strTvNumberOfDays">Days</string>
     <string name="strBtnToGoNext">Next</string>
+    <string name="labelTripName">Name:</string>
+    <string name="tripnamePlaceholder">Ex: World Tour 2020</string>
+    <string name="startDate">start date:</string>
+    <string name="endDate">End date: </string>
+    <string name="numeroPassangeiros">Nº travellers</string>
 </resources>
