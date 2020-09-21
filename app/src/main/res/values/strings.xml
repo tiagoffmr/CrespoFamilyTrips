@@ -7,4 +7,15 @@
     <string name="strEtForDestinyName">Bali</string>
     <string name="strTvNumberOfDays">Days</string>
     <string name="strBtnToGoNext">Next</string>
+    <string name="strTvToAddNewExpense">Category</string>
+    <string name="strTvBudgetName">Budget</string>
+    <string name="strEtForBudgetInput">10,00 Euros</string>
+    <string name="strTvToAddTitle">Per day/person</string>
+    <string name="strBtnToOk">OK</string>
+
+    <string-array name="aCategoryOptions">
+        <item>Meal</item>
+        <item>Transportation</item>
+        <item>Accommodation</item>
+    </string-array>
 </resources>

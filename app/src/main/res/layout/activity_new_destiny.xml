@@ -27,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idLlForNumberOfDays"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="idLlForDestinyName">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

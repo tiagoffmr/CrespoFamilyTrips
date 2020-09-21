@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".NewExpenseActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTvToAddTitle"
+        android:text="@string/strTvToAddTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idLlForCategoryInput"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="idTvToAddTitle">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTvToAddNewExpense"
+            android:text="@string/strTvToAddNewExpense"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idSpToSelectCategory"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idLlToAddBudget"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="idLlForCategoryInput">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTvForBudgetName"
+            android:text="@string/strTvBudgetName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idEtForBudgetInput"
+            android:hint="@string/strEtForBudgetInput"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idBtnToOk"
+        android:text="@string/strBtnToOk"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>
