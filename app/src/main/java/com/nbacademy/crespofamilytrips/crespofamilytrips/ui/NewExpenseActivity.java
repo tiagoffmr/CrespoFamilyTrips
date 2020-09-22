@@ -53,8 +53,8 @@ public class NewExpenseActivity extends AppCompatActivity {
 
     void goToAllCategories(){
         //Devo ter de verificar se os campos foram preenchidos e bem preenchidos
-        Intent goToAllCategories = new Intent(this, AllCategoriesActivity.class);
-        startActivity(goToAllCategories);
+       // Intent goToAllCategories = new Intent(this, AllCategoriesActivity.class);
+       // startActivity(goToAllCategories);
     }//goToAllCategories
 
 }
