@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">CrespoFamilyTrips</string>
+    <string name="strBtnMyTrips">My Trips</string>
+    <string name="strBtnReports">Reports</string>
+    <string name="strBtnAddExpenses">Add Expenses</string>
+    <string name="strTvDestinyName">Name</string>
+    <string name="strEtForDestinyName">Bali</string>
+    <string name="strTvNumberOfDays">Days</string>
+    <string name="strBtnToGoNext">Next</string>
+    <string name="labelTripName">Name:</string>
+    <string name="tripnamePlaceholder">Ex: World Tour 2020</string>
+    <string name="startDate">start date:</string>
+    <string name="endDate">End date: </string>
+    <string name="numeroPassangeiros">Nº travellers</string>
+    <string name="strTvToAddNewExpense">Category</string>
+    <string name="strTvBudgetName">Budget</string>
+    <string name="strEtForBudgetInput">10,00 Euros</string>
+    <string name="strTvToAddTitle">Por dia/pessoa</string>
+    <string name="strBtnToOk">OK</string>
+    <string-array name="aCategoryOptions">
+        <item>Meal</item>
+        <item>Transportation</item>
+        <item>Accommodation</item>
+    </string-array>
 </resources>

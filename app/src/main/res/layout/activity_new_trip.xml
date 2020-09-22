@@ -12,14 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:scaleX="0.5"
-            android:scaleY="0.5"
-            app:srcCompat="@drawable/airplane" />
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/imagemfundo" />-->
 
         <LinearLayout
             android:layout_width="wrap_content"
