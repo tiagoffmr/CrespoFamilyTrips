@@ -8,9 +8,15 @@
     <string name="strEtForDestinyName">Bali</string>
     <string name="strTvNumberOfDays">Dias</string>
     <string name="strBtnToGoNext">Seguinte</string>
-    <string name="labelTripName">Nome:</string>
-    <string name="tripnamePlaceholder">Ex: World Tour 2020</string>
-    <string name="startDate">Data de início:</string>
-    <string name="endDate">Data de fim: </string>
-    <string name="numeroPassangeiros">Nº viajantes: </string>
+    <string name="strTvToAddNewExpense">Categoria</string>
+    <string name="strTvBudgetName">Orçamento</string>
+    <string name="strEtForBudgetInput">10,00 Euros</string>
+    <string name="strTvToAddTitle">Por dia/pessoa</string>
+    <string name="strBtnToOk">OK</string>
+
+    <string-array name="aCategoryOptions">
+        <item>Alimentação</item>
+        <item>Transportes</item>
+        <item>Alojamento</item>
+    </string-array>
 </resources>

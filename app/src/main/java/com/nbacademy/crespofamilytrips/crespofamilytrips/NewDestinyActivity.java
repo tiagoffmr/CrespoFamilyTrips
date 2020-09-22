@@ -50,7 +50,7 @@ public class NewDestinyActivity extends AppCompatActivity {
     };//mButtonClickHandler
     void goToDestinationExpensesConfig(){
         //Devo ter de verificar se os campos foram preenchidos e bem preenchidos
-        Intent goToDestinationExpensesConfig = new Intent(this, GoToDestinationExpensesConfig.class);
+        Intent goToDestinationExpensesConfig = new Intent(this, DestinationExpensesConfigActivity.class);
         startActivity(goToDestinationExpensesConfig);
     }//goToNext
 }
