@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newTrip">
+    tools:context=".ui.newTrip">
 
     <LinearLayout
         android:id="@+id/lay_main"
@@ -12,24 +12,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scaleX="0.5"
-            android:scaleY="0.5"
-            app:srcCompat="@drawable/airplane" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/imagemfundo" />-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/idTripName"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/labelTripName"/>
 
             <EditText
+                android:id="@+id/idTripNameInput"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:hint="@string/tripnamePlaceholder"/>
@@ -41,10 +43,12 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/idStartDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/startDate"/>
             <DatePicker
+                android:id="@+id/idStartDateInput"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:calendarViewShown="false"
@@ -56,10 +60,12 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/idEndDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/endDate"/>
             <DatePicker
+                android:id="@+id/idEndDateInput"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:calendarViewShown="false"
@@ -71,10 +77,12 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/idNumberOfTravellers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/numeroPassangeiros"/>
             <NumberPicker
+                android:id="@+id/idNumberOfTravellersInput"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
 

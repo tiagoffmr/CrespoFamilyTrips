@@ -9,7 +9,8 @@ import android.widget.TextView;
 public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHolder> {
 
     private TripListener listener;
-    private String[] mDataset;
+    private String[] tripNames;
+    private String[] tripDays;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         public View view;
@@ -19,8 +20,9 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
         }
     }
 
-    public MyTripsAdapter(String[] myDataset) {
-        mDataset = myDataset;
+    public MyTripsAdapter(String[] tripNames , String[] tripDays) {
+        this.tripDays=tripDays;
+        this.tripNames=tripNames;
     }
 
     @Override
@@ -38,7 +40,9 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         TextView tripName = holder.view.findViewById(R.id.trip_name);
-        tripName.setText(mDataset[position]);
+        TextView tripDay = holder.view.findViewById(R.id.trip_duration);
+        tripName.setText(tripNames[position]);
+        tripDay.setText(tripDays[position]);
     }
 
     interface TripListener{
@@ -58,14 +62,14 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
         @Override
         public void onClick(View view) {
 
-            listener.OnCLick(mDataset[getLayoutPosition()]);
+            listener.OnCLick(tripNames[getLayoutPosition()]);
 
         }
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return tripNames.length;
     }
 
 
