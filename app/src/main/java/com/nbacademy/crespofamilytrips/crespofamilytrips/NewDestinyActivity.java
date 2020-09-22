@@ -43,14 +43,14 @@ public class NewDestinyActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.idBtnToGoNext:
-                    goToDestinationExpensesConfig();
+                  //  goToDestinationExpensesConfig();
                     break;
             }
         }//onClick
     };//mButtonClickHandler
-    void goToDestinationExpensesConfig(){
+    /*void goToDestinationExpensesConfig(){
         //Devo ter de verificar se os campos foram preenchidos e bem preenchidos
         Intent goToDestinationExpensesConfig = new Intent(this, GoToDestinationExpensesConfig.class);
         startActivity(goToDestinationExpensesConfig);
-    }//goToNext
+    }//goToNext*/
 }
