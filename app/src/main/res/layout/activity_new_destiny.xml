@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewDestinyActivity">
+    tools:context=".ui.NewDestinyActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idLlForDestinyName"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,8 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idLlForNumberOfDays"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="idLlForDestinyName">
+        android:orientation="horizontal">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,6 +44,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/idBtnToGoNext"
         android:text="@string/strBtnToGoNext"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

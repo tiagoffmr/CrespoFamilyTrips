@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.TextView;
+
+import com.nbacademy.crespofamilytrips.crespofamilytrips.R;
 
 public class NewDestinyActivity extends AppCompatActivity {
 

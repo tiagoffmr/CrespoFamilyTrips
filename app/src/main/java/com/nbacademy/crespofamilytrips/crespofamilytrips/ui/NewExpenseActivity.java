@@ -1,4 +1,4 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.nbacademy.crespofamilytrips.crespofamilytrips.R;
 
 public class NewExpenseActivity extends AppCompatActivity {
     Context mContext;
@@ -36,11 +38,11 @@ public class NewExpenseActivity extends AppCompatActivity {
         mEtForBudgetInput = findViewById(R.id.idEtForBudgetInput);
         mBtnToOk = findViewById(R.id.idBtnToOk);
 
-        mBtnToOk.setOnClickListener(mButtonClickHandler);
+        //mBtnToOk.setOnClickListener(mButtonClickHandler);
 
     }//init
 
-    Button.OnClickListener mButtonClickHandler = new Button.OnClickListener() {
+    /*Button.OnClickListener mButtonClickHandler = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
@@ -49,12 +51,12 @@ public class NewExpenseActivity extends AppCompatActivity {
                     break;
             }
         }//onClick
-    };//mButtonClickHandler
+    };//mButtonClickHandler*/
 
-    void goToAllCategories(){
+    /*void goToAllCategories(){
         //Devo ter de verificar se os campos foram preenchidos e bem preenchidos
-       // Intent goToAllCategories = new Intent(this, AllCategoriesActivity.class);
-       // startActivity(goToAllCategories);
-    }//goToAllCategories
+        Intent goToAllCategories = new Intent(this, AllCategoriesActivity.class);
+        startActivity(goToAllCategories);*/
+    //}//goToAllCategories
 
 }

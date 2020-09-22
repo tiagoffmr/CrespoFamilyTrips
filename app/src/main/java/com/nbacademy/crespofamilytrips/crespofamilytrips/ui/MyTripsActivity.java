@@ -1,10 +1,11 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.ui;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.nbacademy.crespofamilytrips.crespofamilytrips.R;
 
 public class MyTripsActivity extends AppCompatActivity implements MyTripsAdapter.TripListener {
 

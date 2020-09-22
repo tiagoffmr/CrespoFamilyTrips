@@ -1,10 +1,12 @@
-package com.nbacademy.crespofamilytrips.crespofamilytrips;
+package com.nbacademy.crespofamilytrips.crespofamilytrips.ui;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.nbacademy.crespofamilytrips.crespofamilytrips.R;
 
 public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHolder> {
 

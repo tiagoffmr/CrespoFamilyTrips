@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewExpenseActivity">
+    tools:context=".ui.NewExpenseActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/idLlForCategoryInput"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="idTvToAddTitle">
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,8 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idLlToAddBudget"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="idLlForCategoryInput">
+        android:orientation="horizontal">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,6 +48,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idBtnToOk"
-        android:text="@string/strBtnToOk"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:text="@string/strBtnToOk" />
 </android.support.constraint.ConstraintLayout>
