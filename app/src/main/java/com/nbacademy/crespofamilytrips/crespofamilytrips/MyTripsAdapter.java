@@ -11,11 +11,7 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
     private TripListener listener;
     private String[] mDataset;
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        // each data item is just a string in this case
         public View view;
         public MyViewHolder(View v) {
             super(v);
@@ -23,12 +19,10 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
         }
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
     public MyTripsAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
 
-    // Create new views (invoked by the layout manager)
     @Override
     public MyTripsAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                           int viewType) {
@@ -41,11 +35,8 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
     }
 
 
-    // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
         TextView tripName = holder.view.findViewById(R.id.trip_name);
         tripName.setText(mDataset[position]);
     }
@@ -72,7 +63,6 @@ public class MyTripsAdapter extends RecyclerView.Adapter<MyTripsAdapter.MyViewHo
         }
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return mDataset.length;

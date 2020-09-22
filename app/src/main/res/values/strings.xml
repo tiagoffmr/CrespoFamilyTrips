@@ -23,4 +23,8 @@
         <item>Accommodation</item>
     </string-array>
     <string name="destinations">Destinations</string>
+    <string name="done_button">DONE</string>
+    <string name="my_trips">My Trips</string>
+    <string name="trip">trip</string>
+    <string name="days">days</string>
 </resources>
