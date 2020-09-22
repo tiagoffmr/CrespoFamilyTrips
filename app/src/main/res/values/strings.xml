@@ -12,4 +12,5 @@
     <string name="startDate">start date:</string>
     <string name="endDate">End date: </string>
     <string name="numeroPassangeiros">Nº travellers</string>
+    <string name="destinations">Destinations</string>
 </resources>

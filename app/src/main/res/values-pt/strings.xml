@@ -13,4 +13,5 @@
     <string name="startDate">Data de início:</string>
     <string name="endDate">Data de fim: </string>
     <string name="numeroPassangeiros">Nº viajantes: </string>
+    <string name="destinations">Destinos</string>
 </resources>
