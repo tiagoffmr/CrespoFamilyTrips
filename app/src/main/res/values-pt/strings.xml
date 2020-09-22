@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viagens da Família Crespo</string>
+    <string name="strBtnMyTrips">As Minhas Viagens</string>
+    <string name="strBtnReports">Relatórios de Viagem</string>
+    <string name="strBtnAddExpenses">Adicionar Despesas</string>
+    <string name="strTvDestinyName">Nome</string>
+    <string name="strEtForDestinyName">Bali</string>
+    <string name="strTvNumberOfDays">Dias</string>
+    <string name="strBtnToGoNext">Seguinte</string>
+    <string name="labelTripName">Nome:</string>
+    <string name="tripnamePlaceholder">Ex: World Tour 2020</string>
+    <string name="startDate">Data de início:</string>
+    <string name="endDate">Data de fim: </string>
+    <string name="numeroPassangeiros">Nº viajantes: </string>
+</resources>
