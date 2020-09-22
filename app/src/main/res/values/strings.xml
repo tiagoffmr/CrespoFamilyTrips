@@ -22,4 +22,5 @@
         <item>Transportation</item>
         <item>Accommodation</item>
     </string-array>
+    <string name="destinations">Destinations</string>
 </resources>

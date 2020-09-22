@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch(v.getId()){
                 case R.id.idLlBtnMyTrips: goToMyTripsActivity();break;
-                case R.id.idLlBtnReports: goToReports();break;
-                case R.id.idLlBtnAddExpenses: goToAddExpenses();break;
+                //case R.id.idLlBtnReports: goToReports();break;
+               // case R.id.idLlBtnAddExpenses: goToAddExpenses();break;
             }
         }//onClick
     };//mmButtonClickHandler
@@ -48,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(goToMyTripsActivity);
     }//goToMyTrips
 
-    void goToReports(){
-        Intent goToReports = new Intent(this, Reports.class);
-        startActivity(goToReports);
-    }//goToReports
+    //void goToReports(){
+      //  Intent goToReports = new Intent(this, Reports.class);
+       // startActivity(goToReports);
+//    }//goToReports
 
-    void goToAddExpenses(){
-        Intent goToAddExpenses = new Intent(this, AddExpenses.class);
-        startActivity(goToAddExpenses);
-    }//goToAddExpenses
+    //void goToAddExpenses(){
+      //  Intent goToAddExpenses = new Intent(this, AddExpenses.class);
+       // startActivity(goToAddExpenses);
+   // }//goToAddExpenses
 
 }

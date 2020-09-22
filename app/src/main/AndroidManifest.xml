@@ -9,12 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< Updated upstream
-        <activity android:name=".NewDestinyActivity"></activity>
-=======
-        <activity android:name=".newTrip"></activity>
->>>>>>> Stashed changes
-        <activity android:name=".MainActivity">
+        <activity android:name=".DestinationsConfig"></activity>
+        <activity android:name=".NewDestinyActivity" />
+        <activity android:name=".MyTripsActivity" />
+        <activity android:name=".newTrip">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
