@@ -11,8 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DestinationsConfig"></activity>
         <activity android:name=".NewDestinyActivity" />
-        <activity android:name=".MyTripsActivity" />
-        <activity android:name=".newTrip">
+        <activity android:name=".newTrip" />
+        <activity android:name=".MyTripsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

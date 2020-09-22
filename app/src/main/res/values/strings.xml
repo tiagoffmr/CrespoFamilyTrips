@@ -13,4 +13,8 @@
     <string name="endDate">End date: </string>
     <string name="numeroPassangeiros">Nº travellers</string>
     <string name="destinations">Destinations</string>
+    <string name="done_button">DONE</string>
+    <string name="my_trips">My Trips</string>
+    <string name="trip">trip</string>
+    <string name="days">days</string>
 </resources>
