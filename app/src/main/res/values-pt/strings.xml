@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="labelTripName">Nome:</string>
+    <string name="tripnamePlaceholder">Ex: World Tour 2020</string>
+    <string name="startDate">Data de início:</string>
+    <string name="endDate">Data de fim: </string>
+    <string name="numeroPassangeiros">Nº viajantes: </string>
     <string name="app_name">Viagens da Família Crespo</string>
     <string name="strBtnMyTrips">As Minhas Viagens</string>
     <string name="strBtnReports">Relatórios de Viagem</string>
@@ -13,7 +18,6 @@
     <string name="strEtForBudgetInput">10,00 Euros</string>
     <string name="strTvToAddTitle">Por dia/pessoa</string>
     <string name="strBtnToOk">OK</string>
-
     <string-array name="aCategoryOptions">
         <item>Alimentação</item>
         <item>Transportes</item>
