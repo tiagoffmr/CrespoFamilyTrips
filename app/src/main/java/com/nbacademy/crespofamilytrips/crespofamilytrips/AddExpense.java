@@ -48,6 +48,6 @@ public class AddExpense extends AppCompatActivity {
     };//mButtonClickHandler
 
     void addExpenseToDB(){
-        
+
     }//addExpenseToDB
 }
