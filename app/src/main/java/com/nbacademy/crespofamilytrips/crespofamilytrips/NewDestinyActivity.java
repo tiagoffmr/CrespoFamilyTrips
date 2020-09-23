@@ -35,7 +35,7 @@ public class NewDestinyActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 dbU.Insert_Destination(0,String.valueOf(mEtForDestinyInput.getText()), mNpForNumberOfDaysInput.getValue());
-                
+
                 Intent i = new Intent(NewDestinyActivity.this, DestinationsConfig.class);
                 startActivity(i);
             }
