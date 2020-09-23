@@ -45,13 +45,7 @@ public class newTrip extends AppCompatActivity {
                 String startAux  = startDay.getText() + "-" + startMonth.getText()+ "-" + startYear.getText();
                 String endAux  = endDay.getText() + "-" + endMonth.getText()+ "-" + endYear.getText();
 
-                tripInfo = new String[] {String.valueOf(idTripNameInput.getText()), startAux , endAux , String.valueOf(idNumberOfTravellers.getText())};
-                int pila=Integer.parseInt("200");
-                dbU.Insert_trip(tripInfo[0] , pila , tripInfo[1]);
-
-                //TODO INSERT
-
-
+                dbU.Insert_trip(String.valueOf(idTripNameInput.getText()) , Integer.parseInt(idNumberOfTravellers.getText().toString()) , startAux);
 
                 Intent i = new Intent(newTrip.this, DestinationsConfig.class);
                 startActivity(i);
