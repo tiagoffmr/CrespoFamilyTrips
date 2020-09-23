@@ -18,4 +18,7 @@
     <string name="my_trips">As Minhas Viagens</string>
     <string name="trip">trip</string>
     <string name="days">days</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day:</string>
 </resources>

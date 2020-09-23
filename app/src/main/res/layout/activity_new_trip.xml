@@ -4,21 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.newTrip">
+    tools:context=".newTrip">
+
 
     <LinearLayout
         android:id="@+id/lay_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <!--<ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
-            app:srcCompat="@drawable/imagemfundo" />-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -47,12 +40,40 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/startDate"/>
-            <DatePicker
-                android:id="@+id/idStartDateInput"
+            <TextView
+                android:id="@+id/startDay"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:calendarViewShown="false"
-                android:datePickerMode="spinner"/>
+                android:layout_height="wrap_content"
+                android:text="@string/day"/>
+            <EditText
+                android:id="@+id/startDayPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/startMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month"/>
+            <EditText
+                android:id="@+id/startMonthPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/startYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"/>
+            <EditText
+                android:id="@+id/startYearPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -64,12 +85,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/endDate"/>
-            <DatePicker
-                android:id="@+id/idEndDateInput"
+
+            <TextView
+                android:id="@+id/endDay"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:calendarViewShown="false"
-                android:datePickerMode="spinner"/>
+                android:layout_height="wrap_content"
+                android:text="@string/day"/>
+            <EditText
+                android:id="@+id/endDayPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/endMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month"/>
+            <EditText
+                android:id="@+id/endMonthPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/endYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"/>
+            <EditText
+                android:id="@+id/endYearPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -81,16 +131,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/numeroPassangeiros"/>
-            <NumberPicker
+            <EditText
                 android:id="@+id/idNumberOfTravellersInput"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
 
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/idBtnToGoNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strBtnToGoNext"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
     </LinearLayout>
-
-
 
 </RelativeLayout>

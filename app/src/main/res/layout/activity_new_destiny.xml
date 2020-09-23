@@ -10,35 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idLlForDestinyName"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         tools:ignore="MissingConstraints">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/idTvForDestinyName"
-            android:text="@string/strTvDestinyName"/>
+            android:text="@string/strTvDestinyName"
+            android:layout_marginBottom="16dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/idEtForDestinyInput"
-            android:hint="@string/strEtForDestinyName"/>
-    </LinearLayout>
+            android:hint="@string/strEtForDestinyName"
+            android:layout_marginBottom="16dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/idLlForNumberOfDays"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/idTvForNumberOfDays"
-            android:text="@string/strTvNumberOfDays"/>
+            android:text="@string/strTvNumberOfDays"
+            android:layout_marginBottom="16dp"/>
         <NumberPicker
+            android:id="@+id/idNpForNumberOfDaysInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/idNpForNumberOfDaysInput"/>
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:max="4"
+            android:min="1" />
+
     </LinearLayout>
     <Button
         android:layout_width="match_parent"

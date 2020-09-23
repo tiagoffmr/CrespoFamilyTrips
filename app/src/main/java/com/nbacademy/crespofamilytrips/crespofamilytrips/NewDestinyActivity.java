@@ -2,6 +2,7 @@ package com.nbacademy.crespofamilytrips.crespofamilytrips;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,6 @@ public class NewDestinyActivity extends AppCompatActivity {
 
     Context mContext;
 
-    TextView mTvForNumberOfDays, mTvForDestinyName;
     EditText mEtForDestinyInput;
     NumberPicker mNpForNumberOfDaysInput;
     Button mBtnToGoNext;
@@ -23,34 +23,32 @@ public class NewDestinyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_destiny);
+
+        SQLiteDatabase db = openOrCreateDatabase("CrespoTrips",MODE_PRIVATE,null);
+        final DBUtils dbU = new DBUtils(this);
+        dbU.onCreate(db);
+
         init();
-    }//onCreate
+
+        mBtnToGoNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                dbU.Insert_Destination(0,String.valueOf(mEtForDestinyInput.getText()), mNpForNumberOfDaysInput.getValue());
+                
+                Intent i = new Intent(NewDestinyActivity.this, DestinationsConfig.class);
+                startActivity(i);
+            }
+        });
+
+    }
+
+    //onCreate
 
     void init() {
         mContext = this;
-        mTvForNumberOfDays = findViewById(R.id.idTvForNumberOfDays);
-        mTvForDestinyName = findViewById(R.id.idTvForDestinyName);
         mEtForDestinyInput = findViewById(R.id.idEtForDestinyInput);
         mNpForNumberOfDaysInput = findViewById(R.id.idNpForNumberOfDaysInput);
         mBtnToGoNext = findViewById(R.id.idBtnToGoNext);
-
-        mBtnToGoNext.setOnClickListener(mButtonClickHandler);
-
-    }//init
-
-    Button.OnClickListener mButtonClickHandler = new Button.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.idBtnToGoNext:
-                  //  goToDestinationExpensesConfig();
-                    break;
-            }
-        }//onClick
-    };//mButtonClickHandler
-    /*void goToDestinationExpensesConfig(){
-        //Devo ter de verificar se os campos foram preenchidos e bem preenchidos
-        Intent goToDestinationExpensesConfig = new Intent(this, GoToDestinationExpensesConfig.class);
-        startActivity(goToDestinationExpensesConfig);
-    }//goToNext*/
+    }
 }
